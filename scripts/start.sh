@@ -30,7 +30,7 @@ if [[ "x"$MYSQL_USER != "x" && "x"$MYSQL_PASSWORD != "x" && "x"$MYSQL_DATABASE !
 fi
 
 if [[ "x"$WEBSERVER != "x" ]]; then
-	export PARAMS="$PARAMS  --webserver-address=$WEBSERVER_HOST --webserver-port=$WEBSERVER_PORT --webserver-password=$WEBSERVER_PASSWORD"
+	export PARAMS="$PARAMS  --webserver-address=$WEBSERVER_ADDRESS --webserver-port=$WEBSERVER_PORT --webserver-password=$WEBSERVER_PASSWORD"
 fi
 
 # Run
