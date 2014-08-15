@@ -22,7 +22,7 @@ if [[ "x"$MYSQL_USER != "x" && "x"$MYSQL_PASSWORD != "x" && "x"$MYSQL_DATABASE !
 				echo >&2 "Initialising DB"
 				sed -i -e "s:\[dbname\]:${MYSQL_DATABASE}:g" /sql/init.sql
 				mysql -h $MYSQL_HOST -u $MYSQL_USER --password=$MYSQL_PASSWORD $MYSQL_DATABASE < /sql/init.sql
-				exec "/usr/bin/mysql -h $MYSQL_HOST -u $MYSQL_USER --password=$MYSQL_PASSWORD $MYSQL_DATABASE < /sql/index.sql" &
+				#mysql -h $MYSQL_HOST -u $MYSQL_USER --password=$MYSQL_PASSWORD $MYSQL_DATABASE < /sql/index.sql
 		fi
 
 		#echo "gmysql-host=$MYSQL_HOST" > /etc/powerdns/pdns.d/pdns.local
