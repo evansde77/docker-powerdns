@@ -3,7 +3,7 @@ docker-powerdns
 
 Flexible powerdns container for docker
 
-Forked from (https://github.com/timHerman/docker-powerdns)[timHerman/docker-powerdns] 
+Forked from [timHerman/docker-powerdns](https://github.com/timHerman/docker-powerdns) 
 
 Changes made:
 
