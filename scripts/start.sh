@@ -33,6 +33,10 @@ if [[ "x"$WEBSERVER != "x" ]]; then
 	export PARAMS="$PARAMS --webserver=y  --webserver-address=$WEBSERVER_ADDRESS --webserver-port=$WEBSERVER_PORT --webserver-password=$WEBSERVER_PASSWORD"
 fi
 
+if [[ "x"$API_KEY != "x" ]]; then
+   export PARAMS="$PARAMS --api=yes --api-key=$API_KEY --api-logfile=/var/log/pdns.log"
+fi
+
 # Run
 exec /usr/sbin/pdns_server $PARAMS
 
