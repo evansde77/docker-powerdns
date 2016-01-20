@@ -15,7 +15,8 @@ RUN apt-get -y upgrade
 # Basic Requirements
 RUN apt-get -y install pdns-server pdns-backend-mysql mysql-client nano procps
 
-EXPOSE 53
+EXPOSE 53/tcp
+EXPOSE 53/udp
 EXPOSE 80
 EXPOSE 8081
 
