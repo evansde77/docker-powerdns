@@ -11,4 +11,5 @@ Changes made:
  * Support enabling the PDNS REST api via environment variables passed to docker run 
  * expose port 8081 
  * add a couple of debugging tools to apt installs
+ * Explicitly expose the DNS port (53) for both TCP and UDP
  
